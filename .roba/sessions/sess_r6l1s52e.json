@@ -1,0 +1,26 @@
+{
+  "sessionId": "sess_r6l1s52e",
+  "fullHistory": [
+    {
+      "role": "user",
+      "content": "how can u make robot?"
+    },
+    {
+      "role": "assistant",
+      "content": "✓ Created `unitree_g1_custom.xml`\n\n📁 `unitree_g1_custom.xml`  ·  my-mujoco-sim-1779207139\n\n**Model:** Basic Unitree G1 XML skeleton — includes free floating base joint, minimal body/geom hierarchy, 43 position actuators placeholder."
+    }
+  ],
+  "agentHistory": [
+    {
+      "role": "user",
+      "content": "how can u make robot?"
+    },
+    {
+      "role": "assistant",
+      "content": "✓ Created `unitree_g1_custom.xml`\n\n📁 `unitree_g1_custom.xml`  ·  my-mujoco-sim-1779207139\n\n**Model:** Basic Unitree G1 XML skeleton — includes free floating base joint, minimal body/geom hierarchy, 43 position actuators placeholder."
+    }
+  ],
+  "compressionCount": 0,
+  "workspaceRoot": "/home/farid/mojoco/robacreatorhub_server2/roba/roba-laravel/repos/Roba-Dev/my-mujoco-sim-1779207139",
+  "savedAt": 1779307990610
+}

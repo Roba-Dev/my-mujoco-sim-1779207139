@@ -1,0 +1,34 @@
+{
+  "sessionId": "sess_ih5npf6h",
+  "fullHistory": [
+    {
+      "role": "user",
+      "content": "how many files have u?"
+    },
+    {
+      "role": "assistant",
+      "content": "The project currently contains 84 files."
+    },
+    {
+      "role": "assistant",
+      "content": "The workspace contains 85 files."
+    }
+  ],
+  "agentHistory": [
+    {
+      "role": "user",
+      "content": "how many files have u?"
+    },
+    {
+      "role": "assistant",
+      "content": "The project currently contains 84 files."
+    },
+    {
+      "role": "assistant",
+      "content": "The workspace contains 85 files."
+    }
+  ],
+  "compressionCount": 0,
+  "workspaceRoot": "/home/farid/mojoco/robacreatorhub_server2/roba/roba-laravel/repos/Roba-Dev/my-mujoco-sim-1779207139",
+  "savedAt": 1779271237498
+}
