@@ -1,0 +1,18 @@
+{
+  "sessionId": "sess_msv6wbze",
+  "fullHistory": [
+    {
+      "role": "user",
+      "content": "how can u make robot?"
+    }
+  ],
+  "agentHistory": [
+    {
+      "role": "user",
+      "content": "how can u make robot?"
+    }
+  ],
+  "compressionCount": 0,
+  "workspaceRoot": "/home/farid/mojoco/robacreatorhub_server2/roba/roba-laravel/repos/Roba-Dev/my-mujoco-sim-1779207139",
+  "savedAt": 1779436621843
+}

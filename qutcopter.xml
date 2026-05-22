@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="qutcopter">
+    <compiler angle="degree" coordinate="local"/>
+    <option timestep="0.001" gravity="0 0 -9.81"/>
+
+    <!-- Default parameters for joints and actuators -->
+    <default>
+        <joint armature="0.01" damping="0.5" limited="false"/>
+        <motor ctrlrange="-1 1" ctrllimited="true"/>
+    </default>
+
+    <visual>
+        <global offwidth="800" offheight="600"/>
+        <scale rgba="0.8 0.9 1 1"/>
+    </visual>
+
+    <asset>
+        <!-- Simple propeller geometry -->
+        <geom name="prop" type="cylinder" size="0.02 0.05" rgba="0.2 0.2 0.2 1"/>
+        <material name="body_mat" rgba="0.3 0.3 0.35 1"/>
+    </asset>
+
+    <worldbody>
+        <!-- Ground plane -->
+        <!-- Updated floor size to 20x20 meters -->
+        <geom name="floor" type="plane" size="20 20 0.1" material="ground" condim="3"/>
+
+        <!-- Central body of the quadcopter -->
+        <body name="base" pos="0 0 0.1">
+            <freejoint/>
+            <geom type="box" size="0.08 0.08 0.02" material="body_mat"/>
+
+            <!-- Four motor bodies located at the corners -->
+            <body name="motor_fl" pos="0.12 0.12 0">
+                <joint name="fl_joint" type="hinge" axis="0 0 1"/>
+                <geom name="fl_prop" type="cylinder" size="0.02 0.05" rgba="0.1 0.1 0.8 1"/>
+                <motor joint="fl_joint" gear="30"/>
+            </body>
+
+            <body name="motor_fr" pos="0.12 -0.12 0">
+                <joint name="fr_joint" type="hinge" axis="0 0 1"/>
+                <geom name="fr_prop" type="cylinder" size="0.02 0.05" rgba="0.1 0.1 0.8 1"/>
+                <motor joint="fr_joint" gear="30"/>
+            </body>
+
+            <body name="motor_rl" pos="-0.12 0.12 0">
+                <joint name="rl_joint" type="hinge" axis="0 0 1"/>
+                <geom name="rl_prop" type="cylinder" size="0.02 0.05" rgba="0.1 0.1 0.8 1"/>
+                <motor joint="rl_joint" gear="30"/>
+            </body>
+
+            <body name="motor_rr" pos="-0.12 -0.12 0">
+                <joint name="rr_joint" type="hinge" axis="0 0 1"/>
+                <geom name="rr_prop" type="cylinder" size="0.02 0.05" rgba="0.1 0.1 0.8 1"/>
+                <motor joint="rr_joint" gear="30"/>
+            </body>
+        </body>
+    </worldbody>
+
+    <!-- Sensors for state feedback (optional) -->
+    <sensor>
+        <framepos name="base_pos" body="base"/>
+        <framequat name="base_quat" body="base"/>
+        <framexaxis name="base_xaxis" body="base"/>
+        <frameyaxis name="base_yaxis" body="base"/>
+        <framezaxis name="base_zaxis" body="base"/>
+    </sensor>
+</mujoco>
