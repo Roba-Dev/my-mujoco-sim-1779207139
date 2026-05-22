@@ -1,0 +1,50 @@
+{
+  "sessionId": "sess_r3694ak5",
+  "fullHistory": [
+    {
+      "role": "user",
+      "content": "hi"
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Roba Studio is ready — what would you like to work on today?"
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Roba Studio is ready — what would you like to build or modify today?"
+    },
+    {
+      "role": "user",
+      "content": "hi"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello again! Let me know what you’d like to create, edit, or troubleshoot in your MuJoCo simulation."
+    }
+  ],
+  "agentHistory": [
+    {
+      "role": "user",
+      "content": "hi"
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Roba Studio is ready — what would you like to work on today?"
+    },
+    {
+      "role": "assistant",
+      "content": "Hey! Roba Studio is ready — what would you like to build or modify today?"
+    },
+    {
+      "role": "user",
+      "content": "hi"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello again! Let me know what you’d like to create, edit, or troubleshoot in your MuJoCo simulation."
+    }
+  ],
+  "compressionCount": 0,
+  "workspaceRoot": "/home/farid/mojoco/robacreatorhub_server2/roba/roba-laravel/repos/Roba-Dev/my-mujoco-sim-1779207139",
+  "savedAt": 1779447589061
+}
